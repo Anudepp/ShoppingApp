@@ -100,8 +100,11 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #b6b1b1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-.myntra_home {
+.home_logo {
     height: 45px;
     border-radius: 56%;
 
@@ -300,16 +303,7 @@ header {
     font-size: 12px;
     margin-left: 5px;
 }
-/* .btn-add-bag {
-    margin-top: 8px;
-    font-size: 18px;
-    width: 100%;
-    background-color: lightgreen;
-    border: none;
-    padding: 5px 15px;
-    border-radius: 10px;
-    cursor: pointer;
-} */
+
 
 
  .btn-add-bag {
@@ -345,4 +339,11 @@ header {
 }
 a.action_container:link {
     color:black;
+}
+.b{
+    border-radius: 62.5rem;
+    
+    padding: 10px;
+    font-weight: 800;
+    cursor: pointer;
 }
