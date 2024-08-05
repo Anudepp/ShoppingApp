@@ -1,21 +1,32 @@
+// Array containing a list of item objects for the shopping app
 const items = [
     {
+        // Unique identifier for the item
         id: '001',
+        // Path to the item's image
         image: 'images/1.jpg',
+        // Brand or company name of the item
         company: 'Nike',
+        // Name of the item
         item_name: "Men's Nike Navy Team Hoodie",
+        // Original price of the item
         original_price: 100,
+        // Current price of the item after discount
         current_price: 74.99,
+        // Calculate the discount percentage for the item
         get discount_percentage() {
             return parseFloat(((this.original_price - this.current_price) / this.original_price * 100).toFixed(1));
         },
+        // Return period in days for the item
         return_period: 14,
+        // Calculate the delivery date, which is 7 days from today
         get delivery_date() {
             const today = new Date();
             const deliveryDate = new Date(today);
             deliveryDate.setDate(today.getDate() + 7);
             return deliveryDate.toDateString();
         },
+        // Rating of the item with stars and count of reviews
         rating: {
             stars: 4.5,
             count: 1400

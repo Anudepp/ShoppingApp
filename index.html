@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Shopping app</title>
+    <!-- Link to external CSS files -->
     <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
@@ -9,13 +10,16 @@
     />
   </head>
   <body>
+    <!-- Header section containing logo, navigation bar, search bar, and action icons -->
     <header>
       <div class="logo_container">
+        <!-- Logo linking to the home page -->
         <a href="#"
           ><img class="home_logo" src="images/logo.webp" alt="Home"
         /></a>
       </div>
       <nav class="nav_bar">
+        <!-- Navigation links -->
         <a href="#">Men</a>
         <a href="#">Women</a>
         <a href="#">Kids</a>
@@ -24,6 +28,7 @@
         <a href="#">Studio <sup>New</sup></a>
       </nav>
       <div class="search_bar">
+        <!-- Search bar with icon and input field -->
         <span class="material-symbols-outlined search_icon">search</span>
         <input
           type="search"
@@ -32,6 +37,7 @@
         />
       </div>
       <div class="action_bar">
+        <!-- Action icons for profile, wishlist, and bag -->
         <div class="action_container">
           <span class="material-symbols-outlined action_icon">person</span>
           <span class="action_name">Profile</span>
@@ -42,19 +48,23 @@
           <span class="action_name">Wishlist</span>
         </div>
 
+        <!-- Bag icon with link to the bag page -->
         <a class="action_container" href="pages/bag.html">
           <span class="material-symbols-outlined action_icon"
             >shopping_bag</span
           >
           <span class="action_name">Bag</span>
+          <!-- Dynamic item count in the bag -->
           <span class="bag-item-count">0</span>
         </a>
       </div>
     </header>
     <main>
+      <!-- Main content area for displaying items -->
       <div class="items-container"></div>
     </main>
     <footer>
+      <!-- Footer section with feedback button -->
       <div class="footer_container">
         <div class="footer_column">
           <p class="footer-txt">We’d love to hear what you think!</p>
@@ -63,6 +73,7 @@
       </div>
       <hr />
     </footer>
+    <!-- External JavaScript files for functionality -->
     <script src="data/items.js"></script>
     <script src="scripts/index.js"></script>
   </body>
