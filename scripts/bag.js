@@ -1,4 +1,4 @@
-const CONVENIENCE_FEES = 99;
+const CONVENIENCE_FEES = 5;
 let bagItemObjects;
 onLoad();
 
@@ -35,7 +35,7 @@ function displayBagSummary() {
     </div>
     <div class="price-item">
       <span class="price-item-tag">Convenience Fee</span>
-      <span class="price-item-value">₹99</span>
+      <span class="price-item-value">₹5</span>
     </div>
     <hr>
     <div class="price-footer">
