@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Page title displayed in the browser tab -->
     <title>Shopping app</title>
+
+    <!-- Link to the main stylesheet for the page -->
     <link rel="stylesheet" href="../css/index.css" />
+    <!-- Link to the stylesheet specific to the shopping bag page -->
     <link rel="stylesheet" href="../css/bag.css" />
+
+    <!-- Link to Google Fonts for Material Symbols icons -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
   </head>
   <body>
+    <!-- Header section of the page -->
     <header>
+      <!-- Container for the logo, typically displayed on the top-left of the page -->
       <div class="logo_container">
-        <a href="#"
-          ><img class="home_logo" src="../images/logo.webp" alt="Home Logo"
-        /></a>
+        <a href="#">
+          <!-- Logo image for the shopping app -->
+          <img class="home_logo" src="../images/logo.webp" alt="Home Logo" />
+        </a>
       </div>
+
+      <!-- Navigation bar with links to different categories -->
       <nav class="nav_bar">
         <a href="#">Men</a>
         <a href="#">Women</a>
@@ -24,24 +35,33 @@
         <a href="#">Beauty</a>
         <a href="#">Studio <sup>New</sup></a>
       </nav>
+
+      <!-- Search bar for users to search for products -->
       <div class="search_bar">
+        <!-- Icon for the search functionality -->
         <span class="material-symbols-outlined search_icon">search</span>
+        <!-- Input field for entering search queries -->
         <input
           class="search_input"
           placeholder="Search for products, brands and more"
         />
       </div>
+
+      <!-- Action bar with user-related actions -->
       <div class="action_bar">
+        <!-- Profile action container -->
         <div class="action_container">
           <span class="material-symbols-outlined action_icon">person</span>
           <span class="action_name">Profile</span>
         </div>
 
+        <!-- Wishlist action container -->
         <div class="action_container">
           <span class="material-symbols-outlined action_icon">favorite</span>
           <span class="action_name">Wishlist</span>
         </div>
 
+        <!-- Bag action container, includes item count -->
         <div class="action_container">
           <span class="material-symbols-outlined action_icon"
             >shopping_bag</span
@@ -51,23 +71,37 @@
         </div>
       </div>
     </header>
+
+    <!-- Main content area of the page -->
     <main>
+      <!-- Container for the bag page content -->
       <div class="bag-page">
+        <!-- Container for displaying items in the bag -->
         <div class="bag-items-container"></div>
+        <!-- Container for displaying the summary of the bag -->
         <div class="bag-summary"></div>
       </div>
     </main>
+
+    <!-- Footer section of the page -->
     <footer>
       <div class="footer_container">
         <div class="footer_column">
+          <!-- Feedback prompt for users -->
           <p class="f5">We’d love to hear what you think!</p>
+          <!-- Button for submitting feedback -->
           <button class="b" type="button">Give Feedback</button>
         </div>
       </div>
+      <!-- Horizontal line separating the footer from the main content -->
       <hr />
     </footer>
+
+    <!-- Link to the JavaScript file containing item data -->
     <script src="../data/items.js"></script>
+    <!-- Link to the JavaScript file containing main page functionality -->
     <script src="../scripts/index.js"></script>
+    <!-- Link to the JavaScript file containing bag-specific functionality -->
     <script src="../scripts/bag.js"></script>
   </body>
 </html>
