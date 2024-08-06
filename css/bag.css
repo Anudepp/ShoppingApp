@@ -134,3 +134,51 @@
   height: 14px;
   cursor: pointer;
 }
+/* The Modal (background) */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.6); /* Black background with opacity */
+  backdrop-filter: blur(5px); /* Optional: add blur effect */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff; /* White background */
+  margin: 10% auto; /* 10% from the top and centered */
+  padding: 20px; /* Padding inside the modal */
+  border-radius: 10px; /* Rounded corners */
+  width: 60%; /* Could be more or less, depending on screen size */
+  max-width: 500px; /* Max width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* The Close Button */
+.close {
+  color: #333; /* Dark gray color */
+  float: right;
+  font-size: 24px; /* Smaller font size */
+  font-weight: bold;
+  margin-top: -10px; /* Align better with content */
+}
+
+.close:hover,
+.close:focus {
+  color: #000; /* Black color on hover */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Content Text */
+.modal-content p {
+  font-size: 18px; /* Font size for the message */
+  color: #555; /* Gray color for the text */
+  text-align: center; /* Center the text */
+}
